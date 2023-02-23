@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace ZadCompiatoriOL
 {
-    internal class IPrint
+    internal interface IPrint
     {
+        void Print();
     }
 }

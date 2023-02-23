@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace ZadCompiatoriOL
 {
-    internal class ICompratorTochki
+    internal class ICompratorTochki : IComparer<Olimpiada>
     {
+        public int Compare(Olimpiada x, Olimpiada y)
+        {
+            return x.Tochki.CompareTo(y.Tochki);
+        }
     }
 }
